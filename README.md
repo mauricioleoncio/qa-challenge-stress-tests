@@ -31,6 +31,8 @@ Once it's done you can check for results in `build/reports/gatling`
 The test scenarios are in the package `com/justeat/tasks/scenarios` and 
 the simulation class which gatling understand as "tests to run" are under `com/justeat/tasks/simulation`
 
+### Gatling Report Sample:
 
-
+![report-sample](report-sample.png)
+**Note:** This is an interactive report, for better experience check it on the reports folder.
 

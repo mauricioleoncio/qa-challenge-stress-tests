@@ -22,7 +22,7 @@ class GetUserTaskSimulation extends Simulation {
 
   setUp(
     getUserTasksSimulation.inject(
-      rampUsers(50).during(60)
+      rampUsers(300).during(60)
     )
   )
 

@@ -12,4 +12,14 @@ object TasksScenarios {
       .header("Authorization", "Bearer ${accessToken}")
       .check(status.is(_ => 200)))
 
+  def createUserTasks: ChainBuilder =
+    exec(http("POST /tasks")
+      .post("/tasks")
+      .body(
+        StringBody(
+          "{\n \"title\": \"Final Interview\"\n}".stripMargin)
+      ).asJson
+      .header("Authorization", "Bearer ${accessToken}")
+      .check(status.is(_ => 201)))
+
 }
